@@ -28,3 +28,11 @@ https://github.com/openwrt/packages/tree/master/net/wsdd2
 
 Consumed by this archlinux user repository package:
 https://aur.archlinux.org/packages/wsdd2/
+
+
+
+how to build for t113 :
+    1. env
+        export PATH=$PATH:/home/feng/linux/allwinner/t113/T113-Tina5.0-V1.2/out/toolchain/gcc-linaro-5.3.1-2016.05-x86_64_arm-linux-gnueabi/bin/
+    2. build
+    make CC=arm-linux-gnueabi-gcc      AR=arm-linux-gnueabi-ar      STRIP=arm-linux-gnueabi-strip      CFLAGS="-Wall -Os -pipe -march=armv7-a -mfpu=neon-vfpv4 -mfloat-abi=softfp"      LDFLAGS="-s"      PREFIX=/usr      DESTDIR=$(pwd)/_install
