@@ -50,6 +50,8 @@
 
 #include "wsdd.h"
 
+#define _LINUX_IN_H
+
 #include <stdio.h> // FILE, fopen(), fscanf(), snprintf()
 #include <stdlib.h> // realloc(), free()
 #include <unistd.h> // gethostname()

@@ -21,6 +21,8 @@
 #ifndef _WSDD_H_
 #define _WSDD_H_
 
+#define _LINUX_IN_H 
+
 #include <stdbool.h> // bool
 #include <stdio.h> // FILE, fopen(), fprintf()
 #include <syslog.h> // syslog()

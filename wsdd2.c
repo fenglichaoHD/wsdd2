@@ -20,7 +20,8 @@
    along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#define _GNU_SOURCE // asprintf()
+#define _GNU_SOURCE        // asprintf()
+#define _LINUX_IN_H        // 跳过 linux/in.h，防止与 netinet/in.h 冲突
 
 #include "wsdd.h"
 

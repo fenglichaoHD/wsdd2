@@ -51,7 +51,7 @@
 */
 
 #define _GNU_SOURCE // asprintf()
-
+#define _LINUX_IN_H
 #include "wsdd.h" // struct endpoint, DEBUG()
 #include "wsd.h" // struct wsd_req_info, WSD_ACTION_HELLO
 
